@@ -17,3 +17,8 @@ Saat program dijalankan, server menerima tiga koneksi dari klien yang berbeda me
 #### Modifying PORT
 ![ClientServerSamePORT](img/ClientServerSamePort.png)
 Agar berjalan baik, pengubahan port pada `client.rs` dan `server.rs` diperlukan. Jika salah satu dari keduanya memiliki port berbeda, `client` tidak akan bisa terhubung dengan `server`.
+
+#### Add Small Changes PORT
+![AddSmallChanges](img/AddSmallChanges.png)
+
+Dengan perubahan ini, kita dapat tahu informasi pengirim untuk setiap client berupa IP dan Port. Hal ini memungkinkan client untuk mengetahui siapa yang mengirim pesan dengan mengubah format `bcast_tx.send`
